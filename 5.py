@@ -15,10 +15,10 @@ LOCKOUT_DURATION = 60
 
 # === Section login details ===
 if "authenticated_user" not in st.session_state:
-    st.session_state.authentication_user = None
+    st.session_state.authenticated_user = None
 
-if "failed_attemps" not in st.session_state:
-    st.session_state.failed_attempets  = 0
+if "failed_attempts" not in st.session_state:
+    st.session_state.failed_attempts  = 0
 
 if "lockout_time" not in st.session_state:
     st.session_state.lockout_time = 0

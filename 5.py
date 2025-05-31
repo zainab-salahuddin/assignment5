@@ -89,7 +89,7 @@ elif choice == "Login" :
     st.subheader(" 🔑User Login")    
 
     if time.time() < st.session_state.lockout_time:
-        remaining = int(st.session_state.lockout_time - time.time())
+        remaining = int(st.session_state.lockout_time - time.())
         st.error(f" ⏱️Too many failed attempts. Please wait {remaining} seconds.")
         st.stop()
 

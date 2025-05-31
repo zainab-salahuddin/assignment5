@@ -32,7 +32,7 @@ def load_data():
 
 def save_data(data):
     with open(DATA_FILE, "w") as f:
-    json.dump(data, f)
+        json.dump(data, f)
                 
 def generate_key(passkey):
     key = pbkdf2_hmac('sha256', passkey.encode(), SALT, 100000)
